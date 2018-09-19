@@ -1,6 +1,9 @@
 /* iPad Pro screens */
 @media screen and (max-width:1024px){
-
+  #reviews-list li p {
+    margin: 0 0 0.85em;
+    font-size:12em;
+  }
 }
 /* iPad screens */
 @media screen and (max-width:767px){

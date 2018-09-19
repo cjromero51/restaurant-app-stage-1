@@ -1,4 +1,4 @@
-@charset "utf-8";
+/* @charset "utf-8"; */
 /* CSS Document */
 
 body,td,th,p{
@@ -202,7 +202,7 @@ nav h1 a {
   height: 100%;
   position: fixed;
   right: 0;
-  top: 80px;
+  top: 1em;
   width: 50%;
 }
 .inside #map {
@@ -278,6 +278,7 @@ nav h1 a {
 }
 #reviews-list li p {
   margin: 0 0 10px;
+	padding-top: 0.75em;
 }
 #restaurant-hours td {
   color: #666;
