@@ -1,15 +1,110 @@
-/* iPad Pro screens */
-@media screen and (max-width:1024px){
+/* iPad Pro */
+@media screen and (min-width:421px) and (max-width:1024px) {
+  #restaurant-name {
+    font-size: 2.5em;
+  }
+  #restaurant-address {
+    font-size: 1.5em;
+  }
+  #restaurant-container, #restaurant-hours td {
+    font-size: 1.1em;
+  }
+  #reviews-container{
+    padding: 0.875em 1.5em 4em;
+  }
+  #reviews-container h2 {
+    font-size:2em;
+  }
   #reviews-list li p {
     margin: 0 0 0.85em;
-    font-size:12em;
+    font-size:1.25em;
+    font-weight:lighter;
   }
 }
-/* iPad screens */
-@media screen and (max-width:767px){
-
+/*  larger phone screens */
+@media screen and (min-width:375px) and (max-width:420px){
+  #breadcrumb {
+    height:2em;
+  }
+  #breadcrumb li{
+    font-size:0.75em;
+  }
+  #restaurant-img, #restaurant-cuisine {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+  }
+  #restaurant-name {
+    font-size: 1.5em;
+    text-align:center;
+  }
+  #restaurant-address {
+    font-size: 1em;
+  }
+  #restaurant-container, #restaurant-hours td {
+    font-size: 0.95em;
+    padding-left:0.75em;
+  }
+  #reviews-container {
+    padding-left:0.5em;
+  }
+  #reviews-container h2 {
+    font-size:1.75em;
+    padding-top:0;
+    text-align:center;
+  }
+  #reviews-list li p {
+    margin: 0 0 0.85em;
+    font-size:1em;
+    font-weight:lighter;
+  }
+  #footer{
+    width:45%;
+    padding:0.9em;
+  }
 }
-/*  all phone screens */
-@media screen and (max-width:420px){
-
+/* smaller phone screens */
+@media screen and (max-width:374px){
+  #breadcrumb{
+    height:0em;
+    display:none;
+  }
+  #restaurant-img, #restaurant-cuisine {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+  }
+  #restaurant-name {
+    font-size: 1.5em;
+    text-align:center;
+    position:relative;
+    bottom:1.25em;
+  }
+  #restaurant-address {
+    font-size: 1em;
+  }
+  #restaurant-container {
+    font-size: 0.95em;
+    padding-left:0.75em;
+  }
+  #restaurant-hours td{
+    display:none;
+  }
+  #reviews-container {
+    padding:0.25em;
+  }
+  #reviews-container h2 {
+    font-size:1.75em;
+    text-align:center;
+  }
+  #reviews-list li p {
+    margin: 0 0 0.85em;
+    font-size:1em;
+    font-weight:lighter;
+  }
+  #footer{
+    width:40%;
+    padding:0.9em;
+    height:4.75em;
+  }
 }
