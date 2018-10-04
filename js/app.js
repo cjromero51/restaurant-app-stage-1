@@ -1,6 +1,6 @@
-if ('serviceWorker' in navigator){
+if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('./service-worker.js', {scope: './'})
+    .register('./js/service-worker.js')
     .then(function(registration){
       console.log("Service worker registered", registration);
     })
