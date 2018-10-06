@@ -45,6 +45,8 @@
   #restaurant-name {
     font-size: 1.5em;
     text-align:center;
+    margin:0;
+    padding-bottom:1em;
   }
   #restaurant-address {
     font-size: 1em;
@@ -95,6 +97,11 @@
     text-align:center;
     position:relative;
     bottom:1.25em;
+    padding:0;
+    margin:0;
+  }
+  #restaurant-container {
+    display:block;
   }
   #restaurant-address {
     font-size: 1em;
@@ -121,7 +128,8 @@
   #footer {
     height:1.5em;
     padding: 0;
+    padding-top:1em;
     padding-left:1em;
-    padding-bottom:4em;
+    padding-bottom:2em;
   }
 }
