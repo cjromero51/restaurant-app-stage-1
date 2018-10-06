@@ -16,17 +16,17 @@ let cacheFiles = [
 ];
 
 self.addEventListener('install', function(event) {
-  console.log("[ServiceWorker] installed")
+  console.log("Installed")
   e.waitUntil(
     caches.open(cacheName).then(function(cache){
-      console.log("[ServiceWorker] caching all cacheFiles");
+      console.log("Caching all cacheFiles");
       return cache.addAll(cacheFiles);
     })
   )
 })
 
 self.addEventListener('activate', function(event) {
-  console.log("[ServiceWorker] activated")
+  console.log("Activated")
 
   event.waitUntil(
     caches.keys().then(function(keyNames){
@@ -41,17 +41,17 @@ self.addEventListener('activate', function(event) {
 })
 
 self.addEventListener('fetch', function(event) {
-  console.log('[ServiceWorker] is handling fetch event for', event.request.url);
+  console.log('Fetching', event.request.url);
 
   event.respondWith(
     caches.match(event.request).then(function(response) {
       if (response) {
-        // console.log('This was found in the cache:', response);
+        console.log('This was found in the cache:', response);
         return response;
       }
-      // console.log('Not found in cache. Fetching from network');
+      console.log('Not found in cache. Fetching from network');
       return fetch(event.request).then(function(response) {
-        // console.log('Network replied with:', response);
+        console.log('Network responded with:', response);
         return response;
       }).catch(function(error) {
         console.error('Fetching failed:', error);
