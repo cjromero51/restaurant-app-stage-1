@@ -1,4 +1,4 @@
-let cacheName = 'v1';
+let cacheVersion = 'v1';
 let cacheFiles = [
   './img/1.jpg',
   './img/2.jpg',
@@ -18,7 +18,7 @@ let cacheFiles = [
 self.addEventListener('install', function(event) {
   console.log("Installed")
   e.waitUntil(
-    caches.open(cacheName).then(function(cache){
+    caches.open(cacheVersion).then(function(cache){
       console.log("Caching all cacheFiles");
       return cache.addAll(cacheFiles);
     })
@@ -31,7 +31,7 @@ self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys().then(function(keyNames){
       return Promise.all(keyNames.map(function(thisKey){
-        if (thisKey !== cacheName) {
+        if (thisKey !== cacheVersion) {
           console.log("Removing files from the cache ", thisKey);
           return caches.delete(thisKey);
         }
