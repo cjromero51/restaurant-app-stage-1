@@ -17,7 +17,7 @@ let cacheFiles = [
 
 self.addEventListener('install', function(event) {
   console.log("Installed")
-  e.waitUntil(
+  event.waitUntil(
     caches.open(cacheVersion).then(function(cache){
       console.log("Caching all cacheFiles");
       return cache.addAll(cacheFiles);
