@@ -20,6 +20,35 @@
     font-size:1.25em;
     font-weight:lighter;
   }
+  .inside #maincontent {
+    display:block;
+  }
+  .inside header {
+    width:91%
+  }
+  .inside #map-container {
+    width:91%;
+    left:0;
+    height:40%;
+    z-index:10;
+    top:7.75em;
+  }
+  #restaurant-container, #reviews-container {
+    border-bottom: 0.0625em solid #d9d9d9;
+    border-top: 0.0625em solid #fff;
+    width: 100%;
+    margin-top:50%;
+  }
+  #reviews-container {
+    margin-top:0;
+  }
+  #breadcrumb {
+    width:100%;
+    margin-top:2em;
+  }
+  #restaurant-name{
+    text-align:center;
+  }
 }
 /*  larger phone screens */
 @media screen and (min-width:375px) and (max-width:420px){
@@ -67,6 +96,35 @@
     margin: 0 0 0.85em;
     font-size:1em;
     font-weight:lighter;
+  }
+  .inside #maincontent {
+    display:block;
+  }
+  .inside header, .inside #breadcrumb {
+    width:91%
+  }
+  .inside #map-container {
+    width:91%;
+    left:0;
+    height:40%;
+    z-index:10;
+    top:8.25em;
+  }
+  #restaurant-container, #reviews-container {
+    border-bottom: 0.0625em solid #d9d9d9;
+    border-top: 0.0625em solid #fff;
+    width: 100%;
+    margin-top:90%;
+  }
+  #reviews-container {
+    margin-top:0;
+  }
+  #breadcrumb {
+    width:100%;
+    margin-top:0em;
+  }
+  #restaurant-name{
+    text-align:center;
   }
   #footer{
     width:45%;
@@ -125,9 +183,39 @@
     font-size:1em;
     font-weight:lighter;
   }
+  .inside #maincontent {
+    display:block;
+  }
+  .inside header {
+    width:91%
+  }
+  .inside #map-container {
+    width:91%;
+    left:0;
+    height:40%;
+    z-index:10;
+    top:5em;
+  }
+  #restaurant-container, #reviews-container {
+    border-bottom: 0.0625em solid #d9d9d9;
+    border-top: 0.0625em solid #fff;
+    width: 100%;
+    margin-top:65%;
+  }
+  #reviews-container {
+    margin-top:0;
+  }
+  #breadcrumb {
+    width:100%;
+    margin-top:2em;
+  }
+  #restaurant-name{
+    text-align:center;
+  }
   #footer {
-    height:1.5em;
+    height:2.5em;
     padding: 0;
+    margin-bottom: 0.5em;
     padding-top:1em;
     padding-left:1em;
     padding-bottom:2em;
