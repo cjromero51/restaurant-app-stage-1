@@ -24,11 +24,11 @@
     display:block;
   }
   .inside header {
-    width:91%
+    width:100%
   }
   .inside #map-container {
     width:91%;
-    left:0;
+    left:1em;
     height:40%;
     z-index:10;
     top:7.75em;
