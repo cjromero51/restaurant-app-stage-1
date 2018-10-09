@@ -34,7 +34,7 @@
     z-index: 10000;
     width:100%;
   }
-  #map {
+  .inside #map {
     all:unset;
   }
   .inside #map-container {
@@ -127,7 +127,7 @@
   .inside #maincontent {
     display:block;
   }
-  #map {
+  .inside #map {
     all:unset;
   }
   .inside #map-container {
@@ -233,7 +233,7 @@
   .inside #maincontent {
     display:block;
   }
-  #map {
+  .inside #map {
     all:unset;
   }
   .inside #map-container {
