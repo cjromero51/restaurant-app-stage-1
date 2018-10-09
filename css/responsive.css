@@ -34,15 +34,13 @@
     z-index: 10000;
     width:100%;
   }
-  .inside #map {
-    all:unset;
-  }
   .inside #map-container {
     all:unset;
     display:block;
     background: #ccc none repeat scroll 0 0;
     height: 25em;
     padding-top:7.75em;
+    padding-bottom:0;
     position: relative;
     width: 100%;
   }
@@ -55,8 +53,11 @@
     border-bottom: 0.0625em solid #d9d9d9;
     border-top: 0.0625em solid #fff;
     width: 100%;
+    margin-top:0;
+    padding-top:0;
     margin-left: auto;
     margin-right: auto;
+    z-index: 1;
   }
   #breadcrumb {
     width:100%;
@@ -127,15 +128,13 @@
   .inside #maincontent {
     display:block;
   }
-  .inside #map {
-    all:unset;
-  }
   .inside #map-container {
     all:unset;
     display:block;
     background: #ccc none repeat scroll 0 0;
     height: 25em;
     padding-top:7.75em;
+    padding-bottom:0;
     position: relative;
     width: 100%;
   }
@@ -148,6 +147,11 @@
     border-bottom: 0.0625em solid #d9d9d9;
     border-top: 0.0625em solid #fff;
     width: 100%;
+    margin-top:1em;
+    padding-top:1em;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
   }
   #reviews-container {
     margin-top:0;
@@ -181,7 +185,6 @@
       overflow-x: hidden;
   }
   #breadcrumb{
-    height:0em;
     display:none;
   }
   #restaurant-img {
@@ -233,15 +236,13 @@
   .inside #maincontent {
     display:block;
   }
-  .inside #map {
-    all:unset;
-  }
   .inside #map-container {
     all:unset;
     display:block;
     background: #ccc none repeat scroll 0 0;
     height: 25em;
-    padding-top:7.75em;
+    padding-top:5.25em;
+    padding-bottom:0;
     position: relative;
     width: 100%;
   }
@@ -254,6 +255,11 @@
     border-bottom: 0.0625em solid #d9d9d9;
     border-top: 0.0625em solid #fff;
     width: 100%;
+    margin-top:1em;
+    padding-top:2em;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
   }
   #reviews-container {
     margin-top:0;

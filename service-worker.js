@@ -1,4 +1,4 @@
-let cacheVersion = 'v2';
+let cacheVersion = 'v1';
 let cacheFiles = [
   './img/1.jpg',
   './img/2.jpg',
